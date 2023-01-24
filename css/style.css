@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-color: #4b8303;
     border: 1px solid #000000;
     color: aliceblue;
@@ -24,24 +24,33 @@ body {
 }
 
 nav ul {
+    display: inline-block;
     list-style-type: none;
-    display: inline-flex;
-    justify-content: center;
 }
 
 nav li {
+    display: inline-block;
     margin:  0 10px;
 }
 
 .logo {
-    position: absolute;
     top: 0;
     left: 0;
     width: 150px;
     height: 100px;
-    z-index: 0;
 }
 .navbar-links {
-    float: right;
     z-index: 1;
+}
+
+.motto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    height: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    background-color: #47D176;
+    border: 1px solid #000000;
 }
