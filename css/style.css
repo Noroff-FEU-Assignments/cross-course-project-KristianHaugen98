@@ -42,15 +42,41 @@ nav li {
 .navbar-links {
     z-index: 1;
 }
-
 .motto {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: bold;
-    height: 30px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    color: #000000;
-    background-color: #47D176;
+    background-color:forestgreen;
+    color: white;
+    border: 1px solid cornflowerblue
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    grid-gap: 10px;
+}
+
+.product {
     border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.product img {
+    width: 500px;
+    height: 250px;
+}
+
+.last-motto
+{
+    background-color: forestgreen;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
 }
