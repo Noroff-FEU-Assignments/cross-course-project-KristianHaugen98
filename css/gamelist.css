@@ -98,3 +98,17 @@ a {
     padding: 10px;
     text-align: center;
     justify-content: center;
+
+    @media only screen and (max-width: 600px) {
+        .logo {
+            width: 100px;
+            height: 50px;
+        }
+        .navbar-links {
+            display: none;
+        }
+        .product  img {
+            width: 250px;
+            height: 125px;
+        }
+    }
