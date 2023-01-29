@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,47 +57,26 @@ nav ul li a{
 .navbar-links {
     z-index: 1;
 }
-.motto {
-    background-color:forestgreen;
-    color: white;
-    border: 1px solid cornflowerblue
-}
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3.1fr);
-    grid-gap: 10px;
-}
 
-.product {
-    border: 1px solid #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: lightblue;
-}
-
-.product img {
-    width: 500px;
-    height: 250px;
-}
-.motto {
+.aboutus {
     text-align: center;
     justify-content: center;
 }
 
-.last-motto
-{
-    background-color: forestgreen;
+.motto {
+    background-color:forestgreen;
     color: white;
-    border: 1px solid lightblue;
+    border: 1px solid cornflowerblue;
     text-align: center;
     justify-content: center;
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 10px;
     text-align: center;
     justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }

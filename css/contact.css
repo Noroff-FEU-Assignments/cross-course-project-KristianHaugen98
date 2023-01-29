@@ -55,10 +55,12 @@ input[type="submit"] {
 
 .bg-image {
     background-image: url(/images/Contact.jpg);
+    box-sizing: content-box;
+    width: 100%;
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 10px;
     text-align: center;
     justify-content: center;
