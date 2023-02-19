@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GameHub</title>
+  <link rel="stylesheet" href="/css/contact.css">
   </head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
-<nav class="navbar">
+  <nav class="navbar">
     <div class="navbar-container">
       <img src="images/GameHubLogo.png" class="logo" alt="logo">
          <div class="navbar-links">
@@ -20,17 +20,18 @@
           </ul>
          </div>
     </div>
-  </nav> 
+  </nav>
   <div class="motto">
-    <section class="motto">
+    <section class="motto-section">
     <p> <h2>GameHub allows you to purchase a wide selections of games, at a competitive price!</h2></p>
   </section>
+  </div>
   <div class="thanks">
     <section class="thanks">
         <p><h3>Thanks for buying games at Game Hub. If you have any questions, please contact us or send us your thoughts to email. We will replay as fast as we can.</h3></p>
     </section>
   <form action="submit-form.php" method="post">
-    <label for="name">name:</label>
+    <label for="name">Name:</label>
     <input type="text" id="name" name="user_name">
 
     <label for="email">Email:</label>
@@ -39,6 +40,7 @@
     <label for="message">Message:</label>
     <textarea name="message" id="user_message" cols="30" rows="10"></textarea>
     <input type="submit" value="Submit">
+  </div>
     </form>
     <footer class="footer">
       <p>Copyright &copy; 2023 Kristian Haugen</p>
