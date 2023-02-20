@@ -1,99 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-.container {
-    display: grid;
-    place-content: center;
-    margin: 1em;
-    font-family:"Poppins";
-}
-
-.card {
-    width: 100%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-    border-radius: 1.2em;
-}
-
-.content {
-    background: white;
-    margin: 1em;
-}
-
-.img {
-    background: url(/images/Game1.jpg) center/cover;
-    width: 100%;
-    height: 265px;
-    border-radius: 1.2em;
-}
-
-.img-2 {
-    background: url(/images/Game2.jpg) center/cover;
-    width: 100%;
-    height: 265px;
-    border-radius: 1.2em;
-}
-
-.img-3 {
-    background: url(/images/Game3.jpg) center/cover;
-    width: 100%;
-    height: 265px;
-    border-radius: 1.2em;
-}
-
-.review-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: .8em;
-}
-
-.name, .price {
-    font-size: 1.3em;
-    color: #000;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    margin-top: 1.5em;
-    background: #4b8303;
-    padding: .5em;
-    border-radius: .5em;
-    cursor: pointer;
-}
-
-.card-button {
-    display:flex;
-    align-items: center;
-}
-
-@media screen and (min-width: 500px) {
-    .card {
-        width: 350px;
-        margin: 0 auto;
-    }
 }
 
 .navbar {
     position: relative;
     display: flex;
     align-items: center;
-    top: 0;
-    left: 0;
     justify-content: space-between;
     width: 100%;
+    height: 100px;
     background-color: #4b8303;
     border: 1px solid #000000;
     color: aliceblue;
@@ -117,18 +33,6 @@ nav li {
     margin:  0 10px;
 }
 
-nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-
 .logo {
     top: 0;
     left: 0;
@@ -138,20 +42,15 @@ nav ul li a {
 .navbar-links {
     z-index: 1;
 }
-.motto {
-    background-color:forestgreen;
-    color: white;
-    border: 1px solid cornflowerblue
-}
 
 .motto {
-    text-align: center;
-    justify-content: center;
-}
-
-.footer {
-    background-color: #f2f2f2;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    height: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    background-color: #47D176;
+    border: 1px solid #000000;
 }
