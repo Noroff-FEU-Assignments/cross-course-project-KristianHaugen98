@@ -1,4 +1,4 @@
-const apiURL = "https://api.noroff.dev/api/v1/";
+const apiURL = "https://api.noroff.dev/api/v1/gamehub";
 
 const fetchProducts = () => {
   fetch(apiURL)
@@ -22,23 +22,26 @@ async function getProducts() {
       .map((product) => {
         return `
         <div class="card">
-          <div class="img">${product.image}</div>
-          <div class="content">
-            <div class="review-container">
-              <span>Reviews: ${product.rating}</span>
-              <h5 class="price">$${product.price}</h5>
+            <div class="img" style="background-image: url(${product.image})">
             </div>
-            <h4 class="name">${product.name}</h4>
-            <div class="description">
-              <p>${product.description}</p>
-            </div>
-            <div class="button-container">
-              <div class="card-button">
-                <p>Add to cart</p>
-              </div>
+        </div>
+        <div class="content">
+          <div class="review-container">
+            <span>${product.genre}</span>
+            <h5 class="price">$${product.price}</h5>
+          </div>
+          <h4 class="name">${product.title}</h4>
+          <div class="description">
+            <p>${product.description}</p>
+          </div>
+          <div class="button-container">
+            <div class="card-button">
+              <p>Add to cart</p>
             </div>
           </div>
         </div>
+      </div>
+      
       `;
       })
       .join("");
@@ -46,7 +49,10 @@ async function getProducts() {
     // Setter HTML-innholdet til produktcontaineren til å være produkter HTML-stringen
     productContainer.innerHTML = productsHtml;
   } catch (error) {
-    console.log("Error fetching data from API:", error);
+    console.log(
+      "Error fetching data from API (Feil av innhenting av APIen.):",
+      error
+    );
   }
 }
 

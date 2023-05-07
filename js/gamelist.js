@@ -22,23 +22,26 @@ async function getProducts() {
       .map((product) => {
         return `
         <div class="card">
-          <div class="img">${product.imges}</div>
-          <div class="content">
-            <div class="review-container">
-              <span>Reviews: ${product.rating}</span>
-              <h5 class="price">$${product.price}</h5>
+            <div class="img" style="background-image: url(${product.image})">
             </div>
-            <h4 class="name">${product.name}</h4>
-            <div class="description">
-              <p>${product.description}</p>
-            </div>
-            <div class="button-container">
-              <div class="card-button">
-                <p>Add to cart</p>
-              </div>
+        </div>
+        <div class="content">
+          <div class="review-container">
+            <span>${product.genre}</span>
+            <h5 class="price">$${product.price}</h5>
+          </div>
+          <h4 class="name">${product.title}</h4>
+          <div class="description">
+            <p>${product.description}</p>
+          </div>
+          <div class="button-container">
+            <div class="card-button">
+              <p>Add to cart</p>
             </div>
           </div>
         </div>
+      </div>
+      
       `;
       })
       .join("");
