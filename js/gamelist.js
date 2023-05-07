@@ -49,10 +49,7 @@ async function getProducts() {
     // Setter HTML-innholdet til produktcontaineren til å være produkter HTML-stringen
     productContainer.innerHTML = productsHtml;
   } catch (error) {
-    console.log(
-      "Error fetching data from API (Feil av innhenting av APIen.):",
-      error
-    );
+    console.log("Error fetching data from API:", error);
   }
 }
 
