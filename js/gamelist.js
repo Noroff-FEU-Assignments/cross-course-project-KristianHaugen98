@@ -1,4 +1,4 @@
-const apiURL = "https://api.noroff.dev/api/v1/";
+const apiURL = "https://api.noroff.dev/api/v1/gamehub";
 
 const fetchProducts = () => {
   fetch(apiURL)
@@ -22,7 +22,7 @@ async function getProducts() {
       .map((product) => {
         return `
         <div class="card">
-          <div class="img">${product.image}</div>
+          <div class="img">${product.imges}</div>
           <div class="content">
             <div class="review-container">
               <span>Reviews: ${product.rating}</span>
