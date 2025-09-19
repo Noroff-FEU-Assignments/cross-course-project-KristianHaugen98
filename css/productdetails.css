@@ -1,0 +1,52 @@
+/* Center the product detail on the page */
+.product-detail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#product-detail {
+    background: #fff;
+    border: 1px solid #4b8303;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#product-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4b8303;
+    margin: 1rem 0;
+}
+
+/*Styling the button to look nicer :)*/
+.back-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background: #4b8303;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.back-btn:hover {
+    background: #376102;
+}
+
